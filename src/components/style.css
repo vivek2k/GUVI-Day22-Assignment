@@ -1,0 +1,87 @@
+li {
+  text-align: left;
+}
+
+
+
+body, h1, p, ul {
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+  background: rgb(0,103,161);
+  background: linear-gradient(90deg, rgba(0,103,161,1) 0%, rgba(16,180,213,1) 39%, rgba(0,212,255,1) 100%);   
+  font-family: Arial, sans-serif;
+}
+  
+  /* Style for the car pricing system container */
+  .card-pricing-system {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  /* Style for individual pricing cards */
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    margin: 20px;
+  }
+  
+  /* Style for headings in the cards */
+  .card h2 {
+    color: #333;
+  }
+  
+  /* Style for pricing information */
+  .card p {
+    color: #666;
+  }
+  
+  /* Style for the features list */
+  .card ul {
+    /* list-style-type: none; */
+    padding: 20px;
+  }
+
+  ul.yes-features {
+    list-style-type: none;
+  }
+  ul.yes-features li::before{
+    content: '✓ ';
+  }
+  
+
+  ul.no-features {
+    list-style-type: none;
+  }
+  ul.no-features li::before{
+    content: 'x  ';
+  }
+
+
+  .card li {
+    margin-bottom: 5px;
+  }
+  
+  /* Style for the "Buy Now" button */
+  .card button {
+    width: max-content;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .card button:hover {
+    background-color: #0056b3;
+  }
+  
